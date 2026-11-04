@@ -1,0 +1,178 @@
+﻿2026-11-04T19:14:38.8649743Z Current runner version: '2.338.2'
+2026-11-04T19:14:38.8675829Z ##[group]Runner Image Provisioner
+2026-11-04T19:14:38.8676610Z Hosted Compute Agent
+2026-11-04T19:14:38.8677214Z Version: 20261021.618
+2026-11-04T19:14:38.8677786Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-11-04T19:14:38.8678488Z Build Date: 2026-10-21T00:45:21Z
+2026-11-04T19:14:38.8679193Z Worker ID: {131a2c97-fac9-491c-86ce-6c1739dfd017}
+2026-11-04T19:14:38.8679823Z Region: eastus3
+2026-11-04T19:14:38.8680346Z Cloud: Azure
+2026-11-04T19:14:38.8680822Z ##[endgroup]
+2026-11-04T19:14:38.8682672Z ##[group]Operating System
+2026-11-04T19:14:38.8683285Z Ubuntu
+2026-11-04T19:14:38.8683758Z 24.04.5
+2026-11-04T19:14:38.8684237Z LTS
+2026-11-04T19:14:38.8684763Z ##[endgroup]
+2026-11-04T19:14:38.8685585Z ##[group]Runner Image
+2026-11-04T19:14:38.8686289Z Image: ubuntu-24.04
+2026-11-04T19:14:38.8686794Z Version: 20261025.353.1
+2026-11-04T19:14:38.8687984Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+2026-11-04T19:14:38.8689389Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+2026-11-04T19:14:38.8690255Z ##[endgroup]
+2026-11-04T19:14:38.8691970Z ##[group]GITHUB_TOKEN Permissions
+2026-11-04T19:14:38.8694346Z Contents: read
+2026-11-04T19:14:38.8694911Z Metadata: read
+2026-11-04T19:14:38.8695460Z Pages: read
+2026-11-04T19:14:38.8695935Z ##[endgroup]
+2026-11-04T19:14:38.8698114Z Secret source: Actions
+2026-11-04T19:14:38.8699028Z Cache mode: write
+2026-11-04T19:14:38.8699871Z Prepare workflow directory
+2026-11-04T19:14:38.9909973Z Prepare all required actions
+2026-11-04T19:14:38.9961476Z Getting action download info
+2026-11-04T19:14:39.1832798Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-11-04T19:14:39.4170489Z Complete job name: verify-live
+2026-11-04T19:14:39.6167420Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+2026-11-04T19:14:39.6168486Z with:
+2026-11-04T19:14:39.6168897Z   persist-credentials: false
+2026-11-04T19:14:39.6169455Z   repository: riteshmamidi0905-lab/nasha-pages-rehearsal
+2026-11-04T19:14:39.6173375Z   token: ***
+2026-11-04T19:14:39.6173759Z   ssh-strict: true
+2026-11-04T19:14:39.6174151Z   ssh-user: git
+2026-11-04T19:14:39.6174524Z   clean: true
+2026-11-04T19:14:39.6174927Z   sparse-checkout-cone-mode: true
+2026-11-04T19:14:39.6175396Z   fetch-depth: 1
+2026-11-04T19:14:39.6175786Z   fetch-tags: false
+2026-11-04T19:14:39.6176188Z   show-progress: true
+2026-11-04T19:14:39.6176584Z   lfs: false
+2026-11-04T19:14:39.6176954Z   submodules: false
+2026-11-04T19:14:39.6177365Z   set-safe-directory: true
+2026-11-04T19:14:39.6177818Z   allow-unsafe-pr-checkout: false
+2026-11-04T19:14:39.6178528Z env:
+2026-11-04T19:14:39.6179325Z   SITE_URL: https://riteshmamidi0905-lab.github.io/nasha-pages-rehearsal/__intentional_verification_failure__
+2026-11-04T19:14:39.6180175Z ##[endgroup]
+2026-11-04T19:14:39.9491790Z Syncing repository: riteshmamidi0905-lab/nasha-pages-rehearsal
+2026-11-04T19:14:39.9495563Z ##[group]Getting Git version info
+2026-11-04T19:14:39.9496562Z Working directory is '/home/runner/work/nasha-pages-rehearsal/nasha-pages-rehearsal'
+2026-11-04T19:14:39.9497896Z [command]/usr/bin/git version
+2026-11-04T19:14:39.9621744Z git version 2.56.0
+2026-11-04T19:14:39.9680581Z ##[endgroup]
+2026-11-04T19:14:39.9695647Z Temporarily overriding HOME='/home/runner/work/_temp/9aea60e6-ad3c-4131-9266-d6cc314d7435' before making global git config changes
+2026-11-04T19:14:39.9699434Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-04T19:14:39.9703040Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nasha-pages-rehearsal/nasha-pages-rehearsal
+2026-11-04T19:14:39.9764271Z Deleting the contents of '/home/runner/work/nasha-pages-rehearsal/nasha-pages-rehearsal'
+2026-11-04T19:14:39.9767640Z ##[group]Initializing the repository
+2026-11-04T19:14:39.9773911Z [command]/usr/bin/git init /home/runner/work/nasha-pages-rehearsal/nasha-pages-rehearsal
+2026-11-04T19:14:39.9928076Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-04T19:14:39.9935829Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-04T19:14:39.9938537Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-04T19:14:39.9940873Z hint: call:
+2026-11-04T19:14:39.9943579Z hint:
+2026-11-04T19:14:39.9945106Z hint: 	git config --global init.defaultBranch <name>
+2026-11-04T19:14:39.9949678Z hint:
+2026-11-04T19:14:39.9951769Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-04T19:14:39.9954175Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-04T19:14:39.9956122Z hint:
+2026-11-04T19:14:39.9957463Z hint: 	git branch -m <name>
+2026-11-04T19:14:39.9958953Z hint:
+2026-11-04T19:14:39.9960791Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-04T19:14:39.9964124Z Initialized empty Git repository in /home/runner/work/nasha-pages-rehearsal/nasha-pages-rehearsal/.git/
+2026-11-04T19:14:39.9969601Z [command]/usr/bin/git remote add origin https://github.com/riteshmamidi0905-lab/nasha-pages-rehearsal
+2026-11-04T19:14:40.0012246Z ##[endgroup]
+2026-11-04T19:14:40.0014397Z ##[group]Disabling automatic garbage collection
+2026-11-04T19:14:40.0016047Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-04T19:14:40.0052010Z ##[endgroup]
+2026-11-04T19:14:40.0052881Z ##[group]Setting up auth
+2026-11-04T19:14:40.0061760Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-04T19:14:40.0115715Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-04T19:14:40.0540678Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-04T19:14:40.0578104Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-04T19:14:40.0784866Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-04T19:14:40.0820606Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-04T19:14:40.1022459Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-04T19:14:40.1062946Z ##[endgroup]
+2026-11-04T19:14:40.1063879Z ##[group]Fetching the repository
+2026-11-04T19:14:40.1077824Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f605d04b347c4f8961d500658ce7e4d9a414d039:refs/remotes/origin/main
+2026-11-04T19:14:40.5347588Z From https://github.com/riteshmamidi0905-lab/nasha-pages-rehearsal
+2026-11-04T19:14:40.5350316Z  * [new ref]         f605d04b347c4f8961d500658ce7e4d9a414d039 -> origin/main
+2026-11-04T19:14:40.5356748Z ##[endgroup]
+2026-11-04T19:14:40.5359093Z ##[group]Determining the checkout info
+2026-11-04T19:14:40.5361833Z ##[endgroup]
+2026-11-04T19:14:40.5363619Z [command]/usr/bin/git sparse-checkout disable
+2026-11-04T19:14:40.5416755Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-04T19:14:40.5450081Z ##[group]Checking out the ref
+2026-11-04T19:14:40.5455655Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-04T19:14:40.5628512Z Switched to a new branch 'main'
+2026-11-04T19:14:40.5632826Z branch 'main' set up to track 'origin/main'.
+2026-11-04T19:14:40.5641387Z ##[endgroup]
+2026-11-04T19:14:40.5684903Z [command]/usr/bin/git log -1 --format=%H
+2026-11-04T19:14:40.5710176Z f605d04b347c4f8961d500658ce7e4d9a414d039
+2026-11-04T19:14:40.5720016Z ##[group]Removing auth
+2026-11-04T19:14:40.5724171Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-04T19:14:40.5755213Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-04T19:14:40.5953841Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-04T19:14:40.5982063Z http.https://github.com/.extraheader
+2026-11-04T19:14:40.5988494Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-04T19:14:40.6023914Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-04T19:14:40.6218329Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-04T19:14:40.6248788Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-04T19:14:40.6436966Z ##[endgroup]
+2026-11-04T19:14:40.7042744Z ##[group]Run test "$(gh api "repos/$GITHUB_REPOSITORY/pages" -q .build_type)" = "workflow"
+2026-11-04T19:14:40.7045297Z [36;1mtest "$(gh api "repos/$GITHUB_REPOSITORY/pages" -q .build_type)" = "workflow"[0m
+2026-11-04T19:14:40.7065664Z shell: /usr/bin/bash -e {0}
+2026-11-04T19:14:40.7066818Z env:
+2026-11-04T19:14:40.7068687Z   SITE_URL: https://riteshmamidi0905-lab.github.io/nasha-pages-rehearsal/__intentional_verification_failure__
+2026-11-04T19:14:40.7080289Z   GH_TOKEN: ***
+2026-11-04T19:14:40.7081312Z ##[endgroup]
+2026-11-04T19:14:42.9906874Z ##[group]Run python3 scripts/verify-live-site.py "$SITE_URL" --manifest scripts/publish-manifest.json --expect-digest "$EXPECTED_DIGEST" --summary "$GITHUB_STEP_SUMMARY" --wait 1
+2026-11-04T19:14:42.9908135Z [36;1mpython3 scripts/verify-live-site.py "$SITE_URL" --manifest scripts/publish-manifest.json --expect-digest "$EXPECTED_DIGEST" --summary "$GITHUB_STEP_SUMMARY" --wait 1[0m
+2026-11-04T19:14:42.9922504Z shell: /usr/bin/bash -e {0}
+2026-11-04T19:14:42.9922824Z env:
+2026-11-04T19:14:42.9923478Z   SITE_URL: https://riteshmamidi0905-lab.github.io/nasha-pages-rehearsal/__intentional_verification_failure__
+2026-11-04T19:14:42.9924185Z   EXPECTED_DIGEST: fc71be319008b783e8e72a0ad6857975cc50b9eb4322d7f3d13f8a19b122b056
+2026-11-04T19:14:42.9924660Z ##[endgroup]
+2026-11-04T19:14:47.9922528Z LIVE SITE DOES NOT MATCH THE RELEASE (48 problem(s)):
+2026-11-04T19:14:47.9922992Z   GET /404.html -> 404
+2026-11-04T19:14:47.9923305Z   GET /ai-engineering.html -> 404
+2026-11-04T19:14:47.9923751Z   GET /assets/fonts/Inter-LICENSE.txt -> 404
+2026-11-04T19:14:47.9924162Z   GET /assets/fonts/JetBrains-Mono-LICENSE.txt -> 404
+2026-11-04T19:14:47.9924571Z   GET /assets/fonts/inter-latin.woff2 -> 404
+2026-11-04T19:14:47.9924956Z   GET /assets/fonts/jetbrains-mono-latin.woff2 -> 404
+2026-11-04T19:14:47.9925829Z   GET /assets/img/cases/cs-agent-platform-ui.jpg -> 404
+2026-11-04T19:14:47.9926572Z   GET /assets/img/cases/cs-copilot-approval.jpg -> 404
+2026-11-04T19:14:47.9927272Z   GET /assets/img/cases/cs-copilot-uncertain.jpg -> 404
+2026-11-04T19:14:47.9927907Z   GET /assets/img/cases/cs-genai-chat.jpg -> 404
+2026-11-04T19:14:47.9942301Z   GET /assets/img/cases/cs-llm-eval-report.jpg -> 404
+2026-11-04T19:14:47.9943046Z   GET /assets/img/cases/cs-weir-flow.jpg -> 404
+2026-11-04T19:14:47.9943738Z   GET /assets/js/nasha-ecosystem-core.js -> 404
+2026-11-04T19:14:47.9944404Z   GET /case-genai-doc-assistant.html -> 404
+2026-11-04T19:14:47.9945066Z   GET /case-llm-eval-framework.html -> 404
+2026-11-04T19:14:47.9945716Z   GET /case-mcp-weir.html -> 404
+2026-11-04T19:14:47.9946340Z   GET /case-nasha-ai-lab-architecture.html -> 404
+2026-11-04T19:14:47.9947010Z   GET /case-production-ai-agent-platform.html -> 404
+2026-11-04T19:14:47.9947409Z   GET /case-studies.html -> 404
+2026-11-04T19:14:47.9947766Z   GET /case-support-escalation-copilot.html -> 404
+2026-11-04T19:14:47.9948564Z   GET /cinematic.css -> 404
+2026-11-04T19:14:47.9948881Z   GET /cinematic.js -> 404
+2026-11-04T19:14:47.9949205Z   GET /data-lab.html -> 404
+2026-11-04T19:14:47.9949517Z   GET /data/cases.json -> 404
+2026-11-04T19:14:47.9949825Z   GET /data/datalab/lab-data.json -> 404
+2026-11-04T19:14:47.9950156Z   GET /data/image-register.json -> 404
+2026-11-04T19:14:47.9950466Z   GET /data/lab.json -> 404
+2026-11-04T19:14:47.9950762Z   GET /data/projects.json -> 404
+2026-11-04T19:14:47.9951081Z   GET /datalab.js -> 404
+2026-11-04T19:14:47.9951667Z   GET /demo/app.js -> 404
+2026-11-04T19:14:48.0049290Z ##[error]Process completed with exit code 1.
+2026-11-04T19:14:48.0558021Z Post job cleanup.
+2026-11-04T19:14:48.1445340Z [command]/usr/bin/git version
+2026-11-04T19:14:48.1486588Z git version 2.56.0
+2026-11-04T19:14:48.1526860Z Temporarily overriding HOME='/home/runner/work/_temp/3a4e4d0e-2fb6-4ca0-b8be-7324fa098a53' before making global git config changes
+2026-11-04T19:14:48.1528354Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-04T19:14:48.1533255Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/nasha-pages-rehearsal/nasha-pages-rehearsal
+2026-11-04T19:14:48.1574666Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-04T19:14:48.1610425Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-04T19:14:48.1839709Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-04T19:14:48.1880524Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-04T19:14:48.2123388Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-04T19:14:48.2172061Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-04T19:14:48.2565594Z Cleaning up orphan processes
+2026-11-04T19:14:48.2902878Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

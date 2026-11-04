@@ -1,0 +1,157 @@
+{
+  "repository": "riteshmamidi0905-lab/nasha-pages-rehearsal",
+  "run_id": 41884575264,
+  "negative_source_sha": "f605d04b347c4f8961d500658ce7e4d9a414d039",
+  "attempt_3": {
+    "attempt": 3,
+    "status": "completed",
+    "conclusion": "failure",
+    "jobs": [
+      {
+        "id": 126800924798,
+        "name": "guard",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:12:25Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126800977644,
+        "name": "build",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:12:31Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126801954044,
+        "name": "deploy",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:14:25Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126802170560,
+        "name": "verify-live",
+        "conclusion": "failure",
+        "started_at": "2026-11-04T19:14:38Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126802311809,
+        "name": "record-release",
+        "conclusion": "skipped",
+        "started_at": "2026-11-04T19:14:50Z",
+        "steps_executed": false
+      }
+    ]
+  },
+  "attempt_4": {
+    "attempt": 4,
+    "status": "completed",
+    "conclusion": "failure",
+    "jobs": [
+      {
+        "id": 126803718004,
+        "name": "verify-live",
+        "conclusion": "failure",
+        "started_at": "2026-11-04T19:17:21Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126803719848,
+        "name": "deploy",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:14:25Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126803780074,
+        "name": "build",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:12:31Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126803786431,
+        "name": "guard",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:12:25Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126803875586,
+        "name": "record-release",
+        "conclusion": "skipped",
+        "started_at": "2026-11-04T19:17:35Z",
+        "steps_executed": false
+      }
+    ]
+  },
+  "attempt_5": {
+    "attempt": 5,
+    "status": "completed",
+    "conclusion": "failure",
+    "jobs": [
+      {
+        "id": 126804444609,
+        "name": "guard",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:12:25Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126804446683,
+        "name": "build",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:12:31Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126804450611,
+        "name": "deploy",
+        "conclusion": "success",
+        "started_at": "2026-11-04T19:14:25Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126804451181,
+        "name": "verify-live",
+        "conclusion": "failure",
+        "started_at": "2026-11-04T19:17:21Z",
+        "steps_executed": true
+      },
+      {
+        "id": 126804454544,
+        "name": "record-release",
+        "conclusion": "skipped",
+        "started_at": "2026-11-04T19:18:37Z",
+        "steps_executed": false
+      }
+    ]
+  },
+  "owner_approval": [
+    {
+      "actor": "riteshmamidi0905-lab",
+      "state": "approved",
+      "environment_ids": [
+        26178437285
+      ]
+    }
+  ],
+  "deployment_id": 7555382051,
+  "deployment_status": "success",
+  "deployment_unchanged_during_partial_retries": true,
+  "pending_approvals": 0,
+  "final_artifacts": [
+    {
+      "id": 13355292866,
+      "name": "github-pages",
+      "digest": "sha256:48f415e1f086a375e2870d478ffab13bc54daf91db850516d4b383711afc1258"
+    }
+  ],
+  "successful_release_record_present": false,
+  "rollback_evidence_refusal": "ROLLBACK REFUSED (fail closed): no run of the production deploy workflow qualifies for that commit. run 41884575264: the run did not complete successfully (status 'completed', conclusion 'failure')",
+  "final_pages_source": "workflow",
+  "restored_disposable_main": "a79385be1e3b519755823718da67bd4eaff22f4e",
+  "admin_bypass": false,
+  "unfinished_runs": []
+}

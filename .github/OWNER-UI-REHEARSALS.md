@@ -2,7 +2,9 @@
 
 Only repository `riteshmamidi0905-lab/nasha-pages-rehearsal` is in scope. No token creation, App permission expansion, reviewer removal, bypass, production setting change or authorized-candidate edit is part of this procedure.
 
-## Current stage: rejection verified; owner approval for failed-verification rehearsal pending
+## Current stage: live rehearsals complete; physical Safari verification pending
+
+Authoritative final live result: all source, rejection, failed-verification and partial-rerun scenarios have been exercised. See [LIVE-REHEARSAL-RESULTS-20261104.md](LIVE-REHEARSAL-RESULTS-20261104.md). Earlier action instructions below are historical and must not be repeated. No successful release record exists for the failed negative run. NO-GO remains pending actual physical Safari results.
 
 Latest rejection checkpoint: run `41884575264`, attempt 2, completed failure after review history recorded owner `riteshmamidi0905-lab` rejecting environment `26178437285`. Deploy failed without executing steps; verify-live and record-release were skipped. The only artifact is the existing verified github-pages artifact; no release-record artifact exists. The real rollback evidence gate independently refused the commit because this run did not complete successfully. [Evidence](evidence/rejected-deployment-attempt-2.json).
 
