@@ -1,0 +1,45 @@
+{
+  "scope": "Disposable legacy-to-Actions source-transition rehearsal; no production operation",
+  "result": "Source configuration and byte-preservation checks passed; sampled availability only",
+  "legacy_guard": {
+    "run_id": 41889737528,
+    "guard": "failure",
+    "downstream": "skipped",
+    "artifacts": []
+  },
+  "native_fixture": {
+    "run_id": 41890208609,
+    "commit": "d70aba3cfcf8bf19c7168263d4bc876a3b893220",
+    "artifact_id": 13351694876,
+    "approval_actor": "riteshmamidi0905-lab",
+    "environment_id": 26178437285,
+    "admin_bypass": false,
+    "deployment_id": 7554724604,
+    "deployment_status": "success",
+    "index_bytes": 230,
+    "index_sha256": "1119df2fc77225e73298481c1bacb1d34dcc953cea207e727fd49d64ba872926"
+  },
+  "actions_confirmation": "2026-11-04T18:59:16.249189+00:00",
+  "restored_main": "a79385be1e3b519755823718da67bd4eaff22f4e",
+  "restored_tree_equals": "021e9a9bfabee707d4b021076620665b283d933e",
+  "source_after_restoration": "workflow",
+  "observations": [
+    {
+      "file": "source-transition-observations.jsonl",
+      "sha256": "a384741a1047c88aa2961c45054fe5a00e35bacb282da2e354282e0b7d2cea42",
+      "samples": 140,
+      "matching": 140,
+      "first": "2026-11-04T18:49:08.071793+00:00",
+      "last": "2026-11-04T18:54:07.522627+00:00"
+    },
+    {
+      "file": "source-selector-diagnostic-observations.jsonl",
+      "sha256": "1b9dbd6c8e3245a18f520e7f4aad6c7ffd0419a61b4d17a1931f5817a4e32fc5",
+      "samples": 75,
+      "matching": 75,
+      "first": "2026-11-04T18:57:59.083912+00:00",
+      "last": "2026-11-04T19:00:56.958591+00:00"
+    }
+  ],
+  "limitation": "Two observation windows have a gap; matching samples and pre/post bytes do not prove uninterrupted availability. The exact settings-write time was not instrumented."
+}
