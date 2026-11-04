@@ -1,0 +1,64 @@
+{
+  "repository": "riteshmamidi0905-lab/nasha-pages-rehearsal",
+  "run_id": 41884575264,
+  "attempt": 2,
+  "head_sha": "f605d04b347c4f8961d500658ce7e4d9a414d039",
+  "workflow_conclusion": "failure",
+  "reviews": [
+    {
+      "actor": "riteshmamidi0905-lab",
+      "state": "rejected",
+      "environment_ids": [
+        26178437285
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": 126795759741,
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "failure",
+      "steps_executed": false
+    },
+    {
+      "id": 126795761544,
+      "name": "build",
+      "status": "completed",
+      "conclusion": "success",
+      "steps_executed": true
+    },
+    {
+      "id": 126795826099,
+      "name": "guard",
+      "status": "completed",
+      "conclusion": "success",
+      "steps_executed": true
+    },
+    {
+      "id": 126795890494,
+      "name": "verify-live",
+      "status": "completed",
+      "conclusion": "skipped",
+      "steps_executed": false
+    },
+    {
+      "id": 126795890510,
+      "name": "record-release",
+      "status": "completed",
+      "conclusion": "skipped",
+      "steps_executed": false
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 13351220954,
+      "name": "github-pages",
+      "expired": false
+    }
+  ],
+  "release_record_present": false,
+  "pending_reviews": 0,
+  "rollback_evidence_refusal": "ROLLBACK REFUSED (fail closed): no run of the production deploy workflow qualifies for that commit. run 41884575264: the run did not complete successfully (status 'completed', conclusion 'failure')",
+  "result": "PASS: owner rejection prevented deploy, verification and release recording"
+}

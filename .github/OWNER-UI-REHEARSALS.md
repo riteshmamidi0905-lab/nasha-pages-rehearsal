@@ -2,7 +2,11 @@
 
 Only repository `riteshmamidi0905-lab/nasha-pages-rehearsal` is in scope. No token creation, App permission expansion, reviewer removal, bypass, production setting change or authorized-candidate edit is part of this procedure.
 
-## Current stage: source transition verified; owner rejection rehearsal pending
+## Current stage: rejection verified; owner approval for failed-verification rehearsal pending
+
+Latest rejection checkpoint: run `41884575264`, attempt 2, completed failure after review history recorded owner `riteshmamidi0905-lab` rejecting environment `26178437285`. Deploy failed without executing steps; verify-live and record-release were skipped. The only artifact is the existing verified github-pages artifact; no release-record artifact exists. The real rollback evidence gate independently refused the commit because this run did not complete successfully. [Evidence](evidence/rejected-deployment-attempt-2.json).
+
+The next owner action is a current deploy-job retry (attempt 2 job `126795759741`), followed by approval of the fresh disposable-only gate. Its intentionally incorrect live-verification path must then fail and produce no successful release record. The original artifact remains unexpired with its verified archive digest; owner reviewer, main-only policy and disabled bypass remain intact. NO-GO still applies pending this actual failure path, partial reruns and physical Safari.
 
 Latest checkpoint: the API now independently confirms build_type workflow, and the live fixture still matches its expected bytes. Guarded restoration commit `a79385be1e3b519755823718da67bd4eaff22f4e` restores the exact original disposable tree. Unused restoration runs were cancelled before deployment. The functional source-transition rehearsal is complete, with 215 matching HTTP observations across two windows and matching pre/post bytes. There is a gap between windows and the precise settings-write time is not known; uninterrupted availability is not claimed. Raw observations and hashes are retained in [evidence/source-transition-checkpoint.json](evidence/source-transition-checkpoint.json). The next owner step is deploy-only retry and Reject on negative run 41884575264; no further source-setting change is requested.
 
