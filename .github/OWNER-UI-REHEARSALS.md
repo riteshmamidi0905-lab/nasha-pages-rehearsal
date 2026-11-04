@@ -8,6 +8,8 @@ Disposable main is `c7041fd549a599715988d1aa83178a4d00d6cc89`. Its exact tree is
 
 Production PR #6 and production main were not modified. Current disposable Pages source remains Actions. The fixture's push workflow may pass its source guard and then fail because it intentionally has no package or build inputs. That is a fixture-staging outcome, not a portfolio regression; no build artifact, deployment or release record should result. Do not approve any fixture workflow whose artifact has not been inspected.
 
+Observed staging result: [run 41889140649](https://github.com/riteshmamidi0905-lab/nasha-pages-rehearsal/actions/runs/41889140649) completed with guard success, setup-node failure in build (fixture has no package lock), and deploy/verify-live/record-release skipped. Artifact inventory is empty and no reviewer approval is pending. This is not the legacy guard test; that test starts only after owner action 1 changes the source.
+
 ### Owner action 1 — select safe legacy source
 
 1. Sign in as `riteshmamidi0905-lab` and open [disposable Settings → Pages](https://github.com/riteshmamidi0905-lab/nasha-pages-rehearsal/settings/pages).
