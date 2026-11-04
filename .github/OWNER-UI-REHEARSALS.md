@@ -4,7 +4,7 @@ Only repository `riteshmamidi0905-lab/nasha-pages-rehearsal` is in scope. No tok
 
 ## Current stage: source fixture is ready; owner source action is required
 
-Disposable main is `c7041fd549a599715988d1aa83178a4d00d6cc89`. Its exact tree is `.github/workflows/pages.yml`, `.nojekyll` and `index.html`. There are no scripts, package files, media or other non-hidden files. This fixture is not the 49-file portfolio release. Original disposable tree is preserved by restoration commit `021e9a9bfabee707d4b021076620665b283d933e`; restoration will use a normal commit, not a force push or history deletion.
+Disposable main is `d70aba3cfcf8bf19c7168263d4bc876a3b893220` (a content-preserving child of fixture commit `c7041fd549a599715988d1aa83178a4d00d6cc89`). Its exact tree is `.github/workflows/pages.yml`, `.nojekyll` and `index.html`. There are no scripts, package files, media or other non-hidden files. This fixture is not the 49-file portfolio release. Original disposable tree is preserved by restoration commit `021e9a9bfabee707d4b021076620665b283d933e`; restoration will use a normal commit, not a force push or history deletion.
 
 Production PR #6 and production main were not modified. Current disposable Pages source remains Actions. The fixture's push workflow may pass its source guard and then fail because it intentionally has no package or build inputs. That is a fixture-staging outcome, not a portfolio regression; no build artifact, deployment or release record should result. Do not approve any fixture workflow whose artifact has not been inspected.
 
@@ -18,6 +18,8 @@ Observed staging result: [run 41889140649](https://github.com/riteshmamidi0905-l
 4. Report that Save completed. The agent will inspect Pages readback, the native Pages workflow and any pending reviewer gate. If GitHub requests approval, wait for the agent to identify that exact fixture run before acting. Do not remove or bypass the gate.
 
 Expected: build_type becomes legacy, source main at root. The native Pages build should serve only the safe fixture after its normal controls pass. The fixture index is exactly 230 bytes with SHA-256 `1119df2fc77225e73298481c1bacb1d34dcc953cea207e727fd49d64ba872926`. Until observed over HTTP, it is not considered deployed. A failed/blocked native build remains a failed/blocked scenario, not a passed transition test.
+
+Owner action 1 is confirmed: Pages is legacy from main at root. [Run 41889737528](https://github.com/riteshmamidi0905-lab/nasha-pages-rehearsal/actions/runs/41889737528) completed with guard failure at the source check, downstream build/deploy/verify-live/record-release skipped, and an empty artifact inventory. The guard log records exit code 1. This is a passed live legacy-source refusal test; it does not establish transition continuity. The URL still served the prior portfolio when checked, and latest native Pages build returned 404. A content-preserving fixture commit was pushed to trigger branch publication; its actual native build/deployment must still be observed before owner action 2.
 
 ### Agent follow-up after action 1
 
