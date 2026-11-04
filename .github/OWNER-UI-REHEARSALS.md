@@ -2,11 +2,13 @@
 
 Only repository `riteshmamidi0905-lab/nasha-pages-rehearsal` is in scope. No token creation, App permission expansion, reviewer removal, bypass, production setting change or authorized-candidate edit is part of this procedure.
 
-## Current stage: native fixture build is verified; owner reviewer action is required
+## Current stage: fixture deployment verified; return to Actions not yet confirmed
 
-Owner confirmed legacy publishing from main at root. Native [run 41890208609](https://github.com/riteshmamidi0905-lab/nasha-pages-rehearsal/actions/runs/41890208609) is waiting at the unchanged github-pages reviewer gate (environment 26178437285). Its downloaded artifact `13351694876` was inspected independently: exactly index.html (230 bytes, expected fixture hash) and empty .nojekyll, with no tooling or symlinks. ZIP SHA-256 is `5d265ce358aa1c7c436fe675eda98bf06fa76e4ffeda9e737d26fe06789c5edb`. The next owner action is Review deployments → github-pages → Approve and deploy for this disposable fixture run only. Until approval and byte-level live verification occur, the fixture is not counted as deployed.
+Owner confirmed legacy publishing from main at root. Native [run 41890208609](https://github.com/riteshmamidi0905-lab/nasha-pages-rehearsal/actions/runs/41890208609) completed successfully. Its downloaded artifact `13351694876` contains only the verified 230-byte index.html and empty .nojekyll. Review history explicitly records approval by riteshmamidi0905-lab for environment 26178437285; admin bypass remains disabled. Deployment 7554724604 has latest status success. The owner reported the UI banner “There was a problem approving one of the gates.” Its cause is unknown, but the independent server records establish that the fixture approval/deployment succeeded. Both root and index.html match the fixture hash; package.json, scripts/ and the hidden workflow URL return 404.
 
-Disposable main is `d70aba3cfcf8bf19c7168263d4bc876a3b893220` (a content-preserving child of fixture commit `c7041fd549a599715988d1aa83178a4d00d6cc89`). Its exact tree is `.github/workflows/pages.yml`, `.nojekyll` and `index.html`. There are no scripts, package files, media or other non-hidden files. This fixture is not the 49-file portfolio release. Original disposable tree is preserved by restoration commit `021e9a9bfabee707d4b021076620665b283d933e`; restoration will use a normal commit, not a force push or history deletion.
+The return-to-Actions UI action was reported saved, but subsequent fresh and cache-busted API reads still reported legacy. The full source-transition test is NOT PASSED. Keep the minimal fixture on main until Actions mode is independently confirmed; do not infer source state from a UI success message alone.
+
+Disposable main is `9f892bf91fb99823f4a4f143ca59e4bf78d6efa3`; its safe fixture tree equals `d70aba3cfcf8bf19c7168263d4bc876a3b893220` and `c7041fd549a599715988d1aa83178a4d00d6cc89`. Its exact tree is `.github/workflows/pages.yml`, `.nojekyll` and `index.html`. There are no scripts, package files, media or other non-hidden files. This fixture is not the 49-file portfolio release. Original disposable tree is preserved by restoration commit `021e9a9bfabee707d4b021076620665b283d933e`; restoration will use a normal commit, not a force push or history deletion.
 
 Production PR #6 and production main were not modified. Current disposable Pages source remains Actions. The fixture's push workflow may pass its source guard and then fail because it intentionally has no package or build inputs. That is a fixture-staging outcome, not a portfolio regression; no build artifact, deployment or release record should result. Do not approve any fixture workflow whose artifact has not been inspected.
 
@@ -34,6 +36,14 @@ If a native fixture deployment needs a reviewer, give the owner its exact run li
 After the fixture is verified live, the agent will start the read-only source-transition observer and ask the owner to change **Settings → Pages → Build and deployment → Source → GitHub Actions**. Save if a Save control is shown. Leave HTTPS, reviewers, main-only restriction and disabled bypass unchanged.
 
 Expected: source reads workflow; observer records whether the verified fixture continues to be served. Record actual failures/interruption and sampling interval; sampled continuity does not prove no outage occurred between observations. The agent will then restore the preserved disposable tree through a normal commit and stop its resulting deploy at the reviewer gate or cancel unused runs. Do not switch the source to legacy while the restored tooling-containing tree is on main.
+
+## Premature restoration incident and containment
+
+After an API assertion reported legacy, a shell sequence incorrectly continued and pushed restoration commit `c36844d1bdd53317fb43b5e63815ddd3756aea53`. This was an execution error: restoration must have been conditional on confirmed Actions source. Safe-fixture commit `9f892bf91fb99823f4a4f143ca59e4bf78d6efa3` immediately restored the exact three-file safe tree through a normal fast-forward push. No production repository was modified.
+
+Native run `41891227555` for the premature restoration was cancelled before deployment: build/report jobs succeeded, deploy was cancelled with no steps, review history is empty and no approval remains pending. The custom Pages run failed its legacy guard. Follow-up safe-fixture native run `41891291234` was cancelled to avoid an unnecessary extra deployment. The live fixture still matched its original 230-byte hash. These observations establish containment; the cancelled native run is not a successful release or a rejected-review rehearsal.
+
+Future restoration must use a single guarded control path: abort the entire operation unless fresh Pages readback is workflow, require main's expected SHA, and recheck the source immediately before the push. A failed assertion must not be followed by unconditional shell commands. No restoration is currently authorized while readback is legacy.
 
 ## Next stage: rejected deployment, then failed live verification
 
