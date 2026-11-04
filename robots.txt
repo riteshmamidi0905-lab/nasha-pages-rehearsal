@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://riteshmamidi0905-lab.github.io/sitemap.xml
