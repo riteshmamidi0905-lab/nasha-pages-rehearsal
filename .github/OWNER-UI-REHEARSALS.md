@@ -2,7 +2,9 @@
 
 Only repository `riteshmamidi0905-lab/nasha-pages-rehearsal` is in scope. No token creation, App permission expansion, reviewer removal, bypass, production setting change or authorized-candidate edit is part of this procedure.
 
-## Current stage: source fixture is ready; owner source action is required
+## Current stage: native fixture build is verified; owner reviewer action is required
+
+Owner confirmed legacy publishing from main at root. Native [run 41890208609](https://github.com/riteshmamidi0905-lab/nasha-pages-rehearsal/actions/runs/41890208609) is waiting at the unchanged github-pages reviewer gate (environment 26178437285). Its downloaded artifact `13351694876` was inspected independently: exactly index.html (230 bytes, expected fixture hash) and empty .nojekyll, with no tooling or symlinks. ZIP SHA-256 is `5d265ce358aa1c7c436fe675eda98bf06fa76e4ffeda9e737d26fe06789c5edb`. The next owner action is Review deployments → github-pages → Approve and deploy for this disposable fixture run only. Until approval and byte-level live verification occur, the fixture is not counted as deployed.
 
 Disposable main is `d70aba3cfcf8bf19c7168263d4bc876a3b893220` (a content-preserving child of fixture commit `c7041fd549a599715988d1aa83178a4d00d6cc89`). Its exact tree is `.github/workflows/pages.yml`, `.nojekyll` and `index.html`. There are no scripts, package files, media or other non-hidden files. This fixture is not the 49-file portfolio release. Original disposable tree is preserved by restoration commit `021e9a9bfabee707d4b021076620665b283d933e`; restoration will use a normal commit, not a force push or history deletion.
 
